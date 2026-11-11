@@ -12,6 +12,22 @@ build and use the v250 injection hook: the two hook assemblies and the end-to-en
 The original working copies and prebuilt binaries stay in `Hook/`. This folder is the
 distributable set: no `.dll`, no `.pdb`, no one-off UI probes.
 
+## Prebuilt release
+
+A compiled launcher is attached to the
+[v0.0.1 release](https://github.com/CongDanChuanMuc/FunFun/releases/tag/v0.0.1):
+
+| Asset | Size | SHA256 |
+| --- | --- | --- |
+| `prebuilt_v250run_0.0.1.exe` | 54,272 bytes | `21633EC40C6ECBEEAA4D15247459D5F64FAB7CEFA8B3E0B4DAA3212FC55E43BB` |
+
+Download:
+<https://github.com/CongDanChuanMuc/FunFun/releases/download/v0.0.1/prebuilt_v250run_0.0.1.exe>
+
+It is the output of `build.ps1` followed by the launcher compile step below, with
+`StartupHook.dll` embedded as a resource. Nothing needs to be built locally to use it; the
+source files in this folder correspond to the same version.
+
 ## Files
 
 ### `build.ps1`
